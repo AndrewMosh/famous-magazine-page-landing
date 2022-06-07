@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prada landing page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/jquery-3.6.0.min.js" />
+    <script
+      src="https://kit.fontawesome.com/02875aae10.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="login">
+      <a href="">SHOP THE SALE COLLECTION</a>
+      <a href="">Sign in/Register</a>
+      <a href="">Bag</a>
+    </div>
+    <div>
+      <div><h1 class="prada">PRADA</h1></div>
+      <nav>
+        <ul class="navigation-list">
+          <li>Women</li>
+          <li>Men</li>
+          <li>Children</li>
+          <li>Sale</li>
+          <li>New In</li>
+          <li>Home collection</li>
+        </ul>
+
+        <div class="burger">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
+        </div>
+      </nav>
+      <div class="marg">
+        <img class="girl" src="images/mainphoto.png" alt="" />
+      </div>
+    </div>
+    <div class="blockfirst">
+      <h1>SUMMER 2021</h1>
+      <p>
+        Explore sports-inspired ready-to-wear and bold <br />
+        accessories from the latest collection.
+      </p>
+      <button>NEW IN FOR HER</button>
+      <h1>NEW ARRIVALS</h1>
+    </div>
+    <div class="gridok">
+      <li class="gr1"><img src="images/Product1.png" alt="" /></li>
+      <li class="gr2"><img src="images/Product2.png" alt="" /></li>
+      <li class="gr3"><img src="images/Product3.png" alt="" /></li>
+    </div>
+    <div class="blocksecond">
+      <p>
+        <strong> LIGHT LAYERS </strong><br />
+        The Pre-Fall 2021 womenswear collections <br />
+        lightweight jackets in relaxed fits. <br />
+        <br />
+        <button class="spanok">SHOP NOW</button>
+      </p>
+
+      <img src="images/image4.png" alt="" />
+    </div>
+    <h1 class="newarrival">NEW ARRIVALS FOR HIM</h1>
+    <div class="gridok">
+      <li class="gr1"><img src="images/Pro1.png" alt="" /></li>
+      <li class="gr2"><img src="images/Pro2.png" alt="" /></li>
+      <li class="gr3"><img src="images/Pro3.png" alt="" /></li>
+    </div>
+    <div class="blockthird">
+      <img src="images/Text-image.png" alt="" />
+    </div>
+    <footer>
+      <p>
+        <strong>COMPANY</strong> <br />
+        Fondazione Prada <br />
+        Prada Group <br />
+        Luna Rossa <br />
+        Sustainability <br />
+        Work with us
+      </p>
+      <p>
+        <strong>LEGAL TERMS AND CONDITIONS</strong> <br />
+        Legal Notice <br />
+        Privacy Policy <br />
+        Cookie Policy <br />
+        Sitemap
+      </p>
+      <p class="mid">
+        <strong>FOLLOW US</strong><br /><i
+          class="fa-brands fa-twitter-square"
+        ></i
+        ><i class="fa-brands fa-instagram-square"></i
+        ><i class="fa-brands fa-facebook-square"></i
+        ><i class="fa-brands fa-youtube"></i><br />
+        <a href="https://github.com/AndrewMosh">Made by Andrew Mosh </a> <br />
+        <a href="https://www.figma.com/@baske01">Design by Damir Basic</a>
+      </p>
+    </footer>
+    <script>
+      const burger = document.querySelector(".burger");
+      const navigation = document.querySelector(".navigation-list");
+      const navLinks = document.querySelectorAll(".navigation-list li");
+
+      const navAnimation = () => {
+        //Toggle the navigation menu
+        navigation.classList.toggle("nav-active");
+
+        //Animate the menu
+        navLinks.forEach((link, index) => {
+          if (link.style.animation) {
+            link.style.animation = "";
+          } else {
+            link.style.animation = `navLinkFade 500ms ease forwards ${
+              index / 5 + 0.1
+            }s`;
+          }
+        });
+
+        burger.classList.toggle("toggle");
+      };
+
+      burger.addEventListener("click", navAnimation);
+    </script>
+  </body>
+</html>
