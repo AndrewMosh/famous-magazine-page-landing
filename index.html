@@ -15,30 +15,34 @@
   <body>
     <div class="login">
       <a href="">SHOP THE SALE COLLECTION</a>
-      <a href="">Sign in/Register</a>
+      <a href="">Sign In / Register</a>
       <a href="">Bag</a>
     </div>
-    <div>
-      <div><h1 class="prada">PRADA</h1></div>
-      <nav>
-        <ul class="navigation-list">
-          <li>Women</li>
-          <li>Men</li>
-          <li>Children</li>
-          <li>Sale</li>
-          <li>New In</li>
-          <li>Home collection</li>
-        </ul>
 
-        <div class="burger">
-          <div class="line-1"></div>
-          <div class="line-2"></div>
-          <div class="line-3"></div>
-        </div>
+    <div>
+      <h1 class="prada">PRADA</h1>
+      <!-- NAVIGATION MENU -->
+      <nav class="navbar">
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="/">Women</a></li>
+            <li><a href="/">Men</a></li>
+            <li class="services">
+              <a href="/">Children</a>
+            </li>
+            <li><a href="/">Sale</a></li>
+            <li><a href="/">New In</a></li>
+            <li><a href="/">Home collection</a></li>
+          </div>
+        </ul>
       </nav>
-      <div class="marg">
-        <img class="girl" src="images/mainphoto.png" alt="" />
-      </div>
+    </div>
+    <div class="marg">
+      <img class="girl" src="images/mainphoto.png" alt="" />
     </div>
     <div class="blockfirst">
       <h1>SUMMER 2021</h1>
@@ -50,9 +54,9 @@
       <h1>NEW ARRIVALS</h1>
     </div>
     <div class="gridok">
-      <li class="gr1"><img src="images/Product1.png" alt="" /></li>
-      <li class="gr2"><img src="images/Product2.png" alt="" /></li>
-      <li class="gr3"><img src="images/Product3.png" alt="" /></li>
+      <li><img src="images/Product1.png" alt="" /></li>
+      <li><img src="images/Product2.png" alt="" /></li>
+      <li><img src="images/Product3.png" alt="" /></li>
     </div>
     <div class="blocksecond">
       <p>
@@ -90,17 +94,25 @@
         Cookie Policy <br />
         Sitemap
       </p>
-      <p class="mid">
-        <strong>FOLLOW US</strong><br /><i
-          class="fa-brands fa-twitter-square"
-        ></i
-        ><i class="fa-brands fa-instagram-square"></i
+
+      <p class="afraid">
+        <strong> FOLLOW US</strong>
+        <i class="fa-brands fa-twitter-square"></i>
+        <i class="fa-brands fa-instagram-square"></i
         ><i class="fa-brands fa-facebook-square"></i
         ><i class="fa-brands fa-youtube"></i><br />
-        <a href="https://github.com/AndrewMosh">Made by Andrew Mosh </a> <br />
-        <a href="https://www.figma.com/@baske01">Design by Damir Basic</a>
+      </p>
+      <p>
+        <a href="https://github.com/AndrewMosh"
+          >Made by <strong>Andrew Mosh</strong>
+        </a>
+        <br />
+        <a href="https://www.figma.com/@baske01"
+          >Design by <strong> Damir Basic </strong></a
+        >
       </p>
     </footer>
+
     <script>
       const burger = document.querySelector(".burger");
       const navigation = document.querySelector(".navigation-list");
